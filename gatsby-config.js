@@ -4,7 +4,14 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: "Jigar Chavada",
+    siteTitleAlt: "Jigar Chavada",
+    siteHeadline: "Jigar Chavada - Software Developer",
+    siteUrl: "localhost:8000",
+    siteDescription: "Portfolio website of Jigar Chavada",
+    siteLanguage: "en",
+    siteImage: "string",
+    author: "Jigar Chavada",
   },
   plugins: [
     {
@@ -23,11 +30,11 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/JigarChavada1`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/jsc39/`,  
           },
         ],
       },
