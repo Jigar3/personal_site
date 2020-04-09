@@ -7,7 +7,7 @@ module.exports = {
     siteTitle: "Jigar Chavada",
     siteTitleAlt: "Jigar Chavada",
     siteHeadline: "Jigar Chavada - Software Developer",
-    siteUrl: "localhost:8000",
+    siteUrl: "https://jigarc.netlify.com/",
     siteDescription: "Portfolio website of Jigar Chavada",
     siteLanguage: "en",
     siteImage: "string",
@@ -36,6 +36,14 @@ module.exports = {
             name: `LinkedIn`,
             url: `https://www.linkedin.com/in/jsc39/`,  
           },
+          {
+            name: `GitHub`,
+            url: `https://www.github.com/jigar3/`,  
+          },
+          {
+            name: `CV`,
+            url: `https://drive.google.com/file/d/1gBQJiy_vrjS_yJKUVQvQ_4xkcOZmrfwt/view?usp=sharing`
+          }
         ],
       },
     },
