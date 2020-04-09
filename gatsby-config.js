@@ -11,7 +11,7 @@ module.exports = {
     siteUrl: "https://jigarc.netlify.com/",
     siteDescription: "Portfolio website of Jigar Chavada",
     siteLanguage: "en",
-    siteImage: "./static/banner.jpg",
+    siteImage: "./banner.jpg",
     author: "Jigar Chavada",
   },
   plugins: [
