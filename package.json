@@ -13,8 +13,7 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy:github": "gatsby clean; gatsby build && node ./scripts/deploy-github"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "git+https://git@github.com/jigar3/gatsby-theme-minimal-blog.git",
@@ -30,6 +29,5 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8",
-    "gh-pages": "^2.2.0"
   }
 }
