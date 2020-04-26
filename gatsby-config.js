@@ -26,23 +26,11 @@ module.exports = {
           {
             title: `About`,
             slug: `/about`,
-          },
+          }
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/JigarChavada1`,
-          },
-          {
-            name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/jsc39/`,  
-          },
-          {
-            name: `GitHub`,
-            url: `https://www.github.com/jigar3/`,  
-          },
-          {
-            name: `CV`,
+            name: `Resume`,
             url: `https://drive.google.com/file/d/1gBQJiy_vrjS_yJKUVQvQ_4xkcOZmrfwt/view?usp=sharing`
           }
         ],
