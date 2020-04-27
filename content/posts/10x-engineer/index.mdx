@@ -1,0 +1,103 @@
+---
+title: Episode 6- GOJEK’s 10x Engineer - Truth or Myth?
+date: 2020-04-28
+tags:
+  - Podcast Summary
+slug: "/10x-engineer"
+banner: ./banner.png
+---
+
+![banner](./banner.png)
+#### **<center>Link - <ins>https://www.youtube.com/watch?v=He0XBBfCEVk</ins></center>**
+<br/>
+
+
+- Study the textbooks and apply them.
+
+- Every engineer that you add increases the risk of you failing to deliver completely disproportionately. 
+
+- Most people think if you increase headcount, it increases the output, but engineering is different. engineering is strange and counter-intuitive in that every engineer you add, you slow down things exponentially.
+
+- A good engineering leader will challenge you on every addition of headcount because he or she understands that while every headcount that's added gives you more capacity, it comes at this enormous hidden cost 
+
+- The thing about software is when one person works on software, it scales in terms of the effort that the person puts in. But when you have more than one person collaborating on software, it turns into fundamentally a communication problem.
+
+- Every person you add increases the number of combinations of communications you need to decide on to what is it that you are building.
+
+- The foundational aspect of communication is the code itself. How one engineer is trying to communicate with another engineer is best encapsulated in the code itself.
+ 
+- Therefore, as you add engineers to a team their productivity starts decreasing exponentially.
+
+- There was an experiment where they tracked and mapped and realized that teams up to a size of 4-5, productivity scaled linearly, after 5-6 it started plateauing after then it starts dropping exponentially.
+
+- So they sliced and diced the system in such a way that at any point each subsystem had a team of 4-5 people and no more. This meant to define the system architecture, to ensure having small teams.  System architecture governed by team structure. 
+
+- So the nuance attached to it is, that you cannot have an infinite number of these 4-5 person teams.
+
+- Essentially, here as well you are trying to solve the communication problem, now not between people but between teams, whose mode of communication is the underlying software itself.
+
+- So you could have an increased number of teams without diminishing productivity only if these teams need to collaborate only say once in two weeks or a month to get on the same page. 
+
+- If multiple teams need to work on the same problem, then increasing the number of teams will create a problem. because everyone is trying to step on each other's toes and everyone is trying to evolve the system based on their local goals and not on the overall global goals
+
+
+- When an organization becomes bigger, complexity is driven by the interdependencies, so as they become higher, you have to be more careful about on-boarding
+
+- You needed to re-architect their system to allow more onboarding otherwise it would have crippled them.
+Example -  Gojek introduced Kafka. What this enabled was called the "Hollywood effect-  Don't call us, we'll call you".
+
+- So let's say I want to ship live tracking, to do so, I will require to know driver locations, and I am not the only team that needs this information, other teams including pricing and incentives. So until they re-architect the systems to give all those teams the data in a manner that doesn't block the team that does own the driver location system, adding more people to the system will bottleneck it even worse. Kafka solves this by giving a feed of data, now whoever wants it can tap that feed instead of asking it.
+
+- Identify a problem, pull it out and establish a pod(5 person team) around it 
+
+- Refactor teams and codebase in lockstep.
+
+- What happens if you don't refactor the code and onboard let's say 100 more engineers?
+It gives rise to something called "relationship as a service".
+I have some dependency on your system and also you have your priorities. So I need to convince you to prioritize something I need to unblock myself. This set of demand starts growing and growing and growing until you are no longer able to do your work. 
+You are completely bottlenecked trying to unbottleneck other people. so because I know you, I am going to come to you and at a personal level convince you that what I need is more important. So now, this converts a simple system into a bureaucracy with back channels. There are certain people in the systems whose relationships allow other parts of the system to scale by giving them a back channel to jump the queue. But this does not scale, as other people who don't have access to this relationship as a service get frustrated. They start to call the organization politic.
+  
+- We talked about hiring, so let's now jump to talk about whom to hire that will not create a bottleneck.
+
+- The primary tool of communication is code. So there are two criteria when you write code.
+1) How well you can write code so that machine runs it well
+2) How well you can write code so that other human beings can grasp this code well. How well can you communicate with the code.
+
+- Ability in the second criterion is more and more important as the organization scales.
+
+- Badly written code is where you don't understand the intent and objectives, what the person writing code was trying to achieve. So conversely, a well-written code provides contextual logic.
+
+- In a fast-moving startup, the most important criteria of code is how fast you can change it, because of changing business needs. So if you can't read the code the ability to change it according to market demand is significantly crippled.
+
+- Give importance to the naming of variables, because when you name something you give it meaning, and if you name something unwisely the conclusions the reader draws could be very very wrong. You need to name things in your code well(express intent).
+
+- 10x engineer - which produces 10x outcome than a normal engineer
+
+- In the early days, you want more people to be 10x engineers, but as the size grows their ability to work in a team becomes more important.
+
+- Truck factor - How many people in your team if got hit by a truck the entire thing will collapse. A Truck factor of 1 is very bad.
+
+- Thus only individual contribution can be dangerous in a team. But it is nuanced that we can have a truly amazing engineer whose code is so seamless that it integrates with the whole system in such a way that people communication doesn't matter as the code speaks for the person itself.
+
+- Avoid negative people in your team.
+
+- How to spot them?
+Every good engineer is highly opinionated, check if their opinions are weakly held or strongly held. If you have a strong opinion that is strongly held and I provide you logic for the opposite and you don't budge then that's problematic. The ability to change your opinion when you see a rational argument being made is required.
+
+- Your code represents you like art represents artists. It's very close to your ego and self-image. If you are unable to deal with criticism of your code it is problematic. You will never get better.
+
+- Coding is more of a craft than a science. There is an enormous amount of subjectivity attached. 
+
+- Being proud of your craft as well as being comfortable when someone deletes it is what you must have. Pride without attachment
+
+- Letting go of the actual thing that made you proud but instead of being proud of having gone through this.
+
+- Engineers care about the impact their solutions make, you don't code just for the sake of it.
+
+- You don't need to push the engineers, you just need to show them the rush.
+
+- When you show the creator the impact of his creation, it creates this loop which makes the person utterly driven in a manner that no external force can. It's the drive of the maker.
+
+- The impact an engineer makes is disproportionate to the number of hours he/she works for. 
+
+- It's what you do with those hours in the state of flow that matters much more. This is why tech companies have pioneered this flexible working arrangement so that it is possible for one to be at its best creative self without agonizing about work hours.
