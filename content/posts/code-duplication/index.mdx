@@ -1,0 +1,71 @@
+---
+title: Code Duplication - Reasons to dread it and how to protect yourself from its evils
+date: 2020-05-22
+tags:
+  - Code Duplication
+  - DRY
+  - Pragmatic Programmer
+slug: "/code-duplication"
+banner: ./banner.png
+---
+
+![banner](./banner.png)
+
+As software engineers, we collect, organize, maintain, and harness knowledge. We document knowledge in specifications and make those specifications come alive by writing and running code.
+
+Unfortunately, knowledge isn't stable. It changes - often rapidly. Our understanding of a requirement may change following a meeting with the client. The government may change regulations and some of our business logic now gets outdated work. All this instability means that we spend a large part of our time in maintenance mode, reorganizing and reexpressing the knowledge in our systems.
+
+When we perform maintenance, we have to find and change the representations of things - those capsules of knowledge embedded within the application. Now during this maintenance, if we have a piece of knowledge which has been duplicated in many places over the application, we have quickly found ourselves in a maintenance nightmare.
+
+So to save ourselves from this nightmare, we must employ the DRY
+
+<br/>
+
+> #### DRY (Don't Repeat Yourself) principle which states that every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+
+<br/>
+
+Be DRY or the alternative is to have the same thing expressed in two or more places. If you change one, you have to remember to change the others, or our program will be brought to its knees by a contradiction. It isn't a question of whether we'll remember: it's a question of when we'll forget.
+
+There are many forms in which Duplication can arise in our codebase. These are:
+1. **Imposed Duplication**: When we feel we have no choice and the environment in which we are working requires duplication.
+2. **Inadvertent Duplication**: When we don't realise that we are duplicating
+3. **Impatient Duplication**: When we get lazy and duplication seems the easy way out
+4. **Interdeveloper Duplication**: When multiple people in a team duplicate a piece of information unknowingly.
+
+For this discussion, let's focus on the type of duplication we are aware of and find ourselves helpless to remove it  -  **Imposed Duplication** and **Impatient Duplication**
+
+<br/>
+
+### Imposed Duplication
+
+We understand that there might be projects on which we work on that require duplication of knowledge in multiple places, but often there are ways in which we can keep each piece of knowledge in one place and honour the DRY Principle. Let's discuss some techniques.
+
+- ##### Multiple representations of information
+
+At the coding level, we often need to have the same information represented in different forms. Maybe we're writing a client-server application, using different languages on the client and server, and need to represent some shared structure on both. Perhaps we need a class whose attributes mirror the schema of a database table.
+
+With some clever hacks, we can remove the need for duplication. One technique that works particularly well, is to convert the information which needs to be duplicated in some sort of metadata and have code generators in place which will extract this metadata and convert them into appropriate structures. The advantage now is that you just have to change the metadata, the process of converting them to appropriate structures is left to those code generators so that you propagate changes everywhere without manually having to do anything.
+
+- ##### Documentation in code
+
+The DRY principle tells us to keep the low-level knowledge in the code, where it belongs, and reserve comments for other, high-level explanations. Otherwise, we're duplicating knowledge, and every change means changing both the code and the comments. The comments will inevitably become out of date, and untrustworthy comments are worse than no comments.
+
+<br/>
+
+### Impatient Duplication
+
+Every project has time pressures - forces that can drive the best of us to take shortcuts.
+
+1. Need a routine similar to the one we've written? We'll be tempted to copy the original and make a few changes. 
+2. Need a class like one in the Java runtime? The source is available, so why not just copy it and make the changes we need?
+
+If you feel this temptation, remember the hackneyed aphorism "**shortcuts make for long delays**". We may well save some seconds now, but at the potential loss of hours later.
+
+Think about the issues surrounding the [Y2K fiasco](https://en.wikipedia.org/wiki/Year_2000_problem). Many were caused by the laziness of developers not parameterizing the size of Date fields or implementing centralized libraries of date services. Impatient duplication is an easy form to detect and handle, but it takes discipline and a willingness to spend time upfront to save pain later.
+
+A great tip to keep in mind is **Make It Easy to Reuse**.
+
+What we're trying to do with this is to foster an environment where it's easier to find and reuse existing stuff than to write it yourself. If it isn't easy, people won't do it. And if you fail to reuse, you risk duplicating knowledge.
+
+I hope I was able to convey the importance of Code Duplication and in the way gave you some tips regarding what you can do to not make this mistake of duplicating. The ideas which I mentioned are obviously not my own but taken from the book **"The Pragmatic Programmer by Andy Hunt and Dave Thomas"**. It's a great book to read and make yourself a better programmer or as the book suggests **"A Pragmatic Programmer"**.
