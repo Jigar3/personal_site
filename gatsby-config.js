@@ -32,14 +32,14 @@ module.exports = {
             slug: `/bookshelf`,
           },
           {
-            title: `Projects`,
-            slug: `/projects`,
+            title: `Summaries`,
+            slug: `/tags/podcast-summary`,
           }
         ],
         externalLinks: [
           {
             name: `Resume`,
-            url: `https://drive.google.com/file/d/1gBQJiy_vrjS_yJKUVQvQ_4xkcOZmrfwt/view?usp=sharing`
+            url: `https://drive.google.com/file/d/1mBZZbZF8DDcH0znbcrJfqqx-jVa9rzX3/view?usp=sharing`
           }
         ],
       },
