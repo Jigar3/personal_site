@@ -39,7 +39,7 @@ module.exports = {
         externalLinks: [
           {
             name: `Resume`,
-            url: `https://drive.google.com/file/d/1mBZZbZF8DDcH0znbcrJfqqx-jVa9rzX3/view?usp=sharing`
+            url: `https://drive.google.com/file/d/1zUWgoZaZ9TUH9eWCGPsFvTb4u2euILSR/view?usp=sharing`
           }
         ],
       },
