@@ -1396,7 +1396,7 @@
 
 "@lekoarts/gatsby-theme-minimal-blog@git+https://git@github.com/jigar3/gatsby-theme-minimal-blog.git":
   version "2.2.4"
-  resolved "git+https://git@github.com/jigar3/gatsby-theme-minimal-blog.git#9ca16f018cd9ee1eed91c42abb19a8f28b89d240"
+  resolved "git+https://git@github.com/jigar3/gatsby-theme-minimal-blog.git#3efe10a4460213306ac5ac010cf337ef2dfa51b1"
   dependencies:
     "@emotion/core" "^10.0.28"
     "@lekoarts/gatsby-theme-minimal-blog-core" "^2.2.3"
