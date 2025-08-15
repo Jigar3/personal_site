@@ -8,7 +8,7 @@ module.exports = {
     siteTitle: "Jigar Chavada",
     siteTitleAlt: "Jigar Chavada",
     siteHeadline: "Jigar Chavada - Software Developer",
-    siteUrl: "https://jigarc.netlify.com/",
+    siteUrl: "https://jigarchavada.com/",
     siteDescription: "Portfolio website of Jigar Chavada",
     siteLanguage: "en",
     siteImage: "/banner.jpg",
